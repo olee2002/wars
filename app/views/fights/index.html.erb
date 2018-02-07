@@ -1,0 +1,14 @@
+<h1>Pokemon & StarWar</h1>
+
+<h3>Star Wars</h3>
+<%= image_tag @star_war.image %>
+<p><%= @star_war.name %></p>
+<p><%= @star_war.wins %></p>
+<h1><%= button_to @star_war.name, update_starwar_path(@star_war), :method => :patch%></h1>
+
+<h3>Pokemon</h3>
+<%= image_tag @pokemon.image %>
+<p><%= @pokemon.name %></p>
+<p><%= @pokemon.wins %></p>
+<h1><%= button_to @pokemon.name, update_pokemon_path(@pokemon), :method => :patch %></h1>
+
